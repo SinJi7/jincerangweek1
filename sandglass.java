@@ -37,4 +37,21 @@ public class my
                 System.out.println(space + star + space);
         };
     }
+    
+    public static void noarr(int num)
+    {
+        final int fin_N = num*2 - 1;
+
+        int N = num*2 - 1;
+
+        for(int i = num; Math.abs(i) < num + 1; i--)
+        {
+            if(i != 0)
+            {
+                System.out.println(" ".repeat((fin_N-Math.abs(N))/2) + "*".repeat(Math.abs(N)) + " ".repeat((fin_N-Math.abs(N))/2));
+                N -= 2;
+            }
+            
+        }
+    }
 }
